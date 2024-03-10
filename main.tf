@@ -11,6 +11,7 @@ resource "google_sql_database_instance" "cloudsql" {
   name             = "${var.db_instance}${random_string.db_instance_suffix.result}"
   region           = var.region
   database_version = var.db_version
+  deletion_protection = var.deletion_protection
 
   settings {
 
