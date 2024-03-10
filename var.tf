@@ -61,3 +61,6 @@ variable "network_id" {
   description = "network id"
 }
 
+variable "deletion_protection" {
+  type        = bool
+}
